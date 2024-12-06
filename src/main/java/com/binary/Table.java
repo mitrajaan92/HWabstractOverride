@@ -39,9 +39,13 @@ public class Table extends Product{
     @Override
     public String toString(){
         return "Table: " +
-                " Height: "+ height+
-                " Width: "+ width+
-                " Length: "+ length;
+                ", ID = " + this.getId() +
+                ", Name= " + this.getName() +
+                ", Price= " + this.getPrice() +
+                ", Rate= " + this.getRating() +
+                ", Height: "+ height+
+                ", Width: "+ width+
+                ", Length: "+ length;
     }
 
     @Override

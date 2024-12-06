@@ -54,12 +54,15 @@ public class Laptop extends Product{
 
     @Override
     public String toString() {
-        return "Laptop{" +
-                "screenSize= " + screenSize +
+        return "Laptop: " +
+                ", ID = " + this.getId() +
+                ", Name= " + this.getName() +
+                ", Price= " + this.getPrice() +
+                ", Rate= " + this.getRating() +
+                ", ScreenSize= " + screenSize +
                 ", ram= " + ram +
                 ", ssd= " + ssd +
-                ", processors= " + processors +
-                '}';
+                ", processors= " + processors;
     }
 
     @Override

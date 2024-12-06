@@ -34,10 +34,13 @@ public class Light extends Product{
     }
     @Override
     public String toString() {
-        return "Light{" +
-                " wats= " + wats +
-                ", lumens= " + lumens +
-                '}';
+        return "Light: " +
+                ", ID = " + this.getId() +
+                ", Name= " + this.getName() +
+                ", Price= " + this.getPrice() +
+                ", Rate= " + this.getRating() +
+                ", Wats= " + wats +
+                ", Lumen= " + lumens;
     }
 
     @Override

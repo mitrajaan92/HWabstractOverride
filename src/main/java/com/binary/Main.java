@@ -63,6 +63,12 @@ public class Main {
         while (!stop){
             int selected = menu();
             if(selected ==1){
+                System.out.println("Table: enter name: ");
+                String name = s.next();
+                System.out.println("Table: enter price: ");
+                double price = s.nextDouble();
+                System.out.println("Table: enter your rating: ");
+                double rate = s.nextDouble();
                 System.out.println("Laptop: enter the screenSize: ");
                 double size = s.nextDouble();
                 System.out.println("Laptop: enter RAM:");
@@ -72,10 +78,20 @@ public class Main {
                 System.out.println("Laptop: enter processor:");
                 double proc = s.nextDouble();
                 Laptop lap = new Laptop(size,ram,ssd,proc);
+                lap.setName(name);
+                lap.setId(lapCounter);
+                lap.setPrice(price);
+                lap.setRating(rate);
                 laptops[lapCounter]= lap;
                 lapCounter++;
             }
             else if(selected == 2){
+                System.out.println("Table: enter name: ");
+                String name = s.next();
+                System.out.println("Table: enter price: ");
+                double price = s.nextDouble();
+                System.out.println("Table: enter your rating: ");
+                double rate = s.nextDouble();
                 System.out.println("Table: enter height: ");
                 int h = s.nextInt();
                 System.out.println("Table: enter width:");
@@ -83,14 +99,29 @@ public class Main {
                 System.out.println("Table: enter length:");
                 int len = s.nextInt();
                 Table tab = new Table(h,w,len);
+                tab.setName(name);
+                tab.setId(tabCounter);
+                tab.setPrice(price);
+                tab.setRating(rate);
                 tables[tabCounter]= tab;
                 tabCounter++;
+
             } else if (selected == 3) {
+                System.out.println("Table: enter name: ");
+                String name = s.next();
+                System.out.println("Table: enter price: ");
+                double price = s.nextDouble();
+                System.out.println("Table: enter your rating: ");
+                double rate = s.nextDouble();
                 System.out.println("Light: enter wats:");
                 int wat = s.nextInt();
                 System.out.println("Light: enter lumens:");
                 int lum = s.nextInt();
                 Light lt = new Light(wat, lum);
+                lt.setName(name);
+                lt.setId(ligCounter);
+                lt.setPrice(price);
+                lt.setRating(rate);
                 light[ligCounter]=lt;
                 ligCounter++;
             }
